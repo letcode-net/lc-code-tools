@@ -10,22 +10,24 @@
 
     <properties>
         <slf4j.version>1.7.30</slf4j.version>
-        <commons-lang3.version>3.10</commons-lang3.version>
-        <commons-io.version>2.6</commons-io.version>
+        <commons-lang3.version>3.11</commons-lang3.version>
+        <commons-io.version>2.7</commons-io.version>
         <freemarker.version>2.3.30</freemarker.version>
-        <mysql.version>8.0.20</mysql.version>
+        <mysql.version>8.0.21</mysql.version>
 
         <junit.version>4.12</junit.version>
         <java.version>1.8</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven-dependency-plugin.version>3.1.1</maven-dependency-plugin.version>
+        <maven-dependency-plugin.version>3.1.2</maven-dependency-plugin.version>
         <maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
-        <maven-resources-plugin.version>3.1.0</maven-resources-plugin.version>
+        <maven-resources-plugin.version>3.2.0</maven-resources-plugin.version>
         <maven-install-plugin.version>2.5.2</maven-install-plugin.version>
         <maven-source-plugin.version>3.2.1</maven-source-plugin.version>
+        <maven-jar-plugin.version>3.2.0</maven-jar-plugin.version>
     </properties>
 
     <dependencies>
+
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>
@@ -87,6 +89,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>
+                <version>${maven-jar-plugin.version}</version>
                 <configuration>
                     <archive>
                         <manifest>
