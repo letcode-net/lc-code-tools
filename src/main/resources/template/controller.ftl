@@ -1,10 +1,10 @@
-package ${packageName}.<#if (entity.moduleName != "")>${entity.moduleName}.</#if>controller;
+package ${packageName}.<#if (entity.moduleName != "")>${entity.moduleName}.</#if>web;
 
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.beans.factory.annotation.Autowired;
 import net.letcode.core.mvc.annotation.BaseService;
-import net.letcode.core.mvc.controller.BaseController;
+import net.letcode.core.mvc.web.BaseController;
 import ${packageName}.<#if (entity.moduleName != "")>${entity.moduleName}.</#if>entity.${entityName};
 import ${packageName}.<#if (entity.moduleName != "")>${entity.moduleName}.</#if>service.${entityName}Service;
 
