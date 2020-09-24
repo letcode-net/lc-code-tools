@@ -1,7 +1,7 @@
 package ${packageName}.<#if (entity.moduleName != "")>${entity.moduleName}.</#if>dao;
 
 import org.springframework.stereotype.Repository;
-import net.letcode.core.mvc.dao.BaseDao;
+import net.letcode.core.boot.dao.BaseDao;
 import ${packageName}.<#if (entity.moduleName != "")>${entity.moduleName}.</#if>entity.${entityName};
 
 /**

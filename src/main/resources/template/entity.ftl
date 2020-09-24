@@ -9,7 +9,7 @@ import java.util.ArrayList;
 <#if entity.hasDateType>
 import java.util.Date;
 </#if>
-import net.letcode.core.mvc.entity.IdEntity;
+import net.letcode.core.boot.entity.IdEntity;
 
 /**
  * ${entity.entityComment}实体

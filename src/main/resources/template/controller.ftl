@@ -3,8 +3,8 @@ package ${packageName}.<#if (entity.moduleName != "")>${entity.moduleName}.</#if
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.beans.factory.annotation.Autowired;
-import net.letcode.core.mvc.annotation.BaseService;
-import net.letcode.core.mvc.web.BaseController;
+import net.letcode.core.boot.support.annotation.BootBaseService;
+import net.letcode.core.boot.web.BaseController;
 import ${packageName}.<#if (entity.moduleName != "")>${entity.moduleName}.</#if>entity.${entityName};
 import ${packageName}.<#if (entity.moduleName != "")>${entity.moduleName}.</#if>service.${entityName}Service;
 
@@ -18,7 +18,7 @@ import ${packageName}.<#if (entity.moduleName != "")>${entity.moduleName}.</#if>
 @RequestMapping(value = "/<#if (entity.moduleName != "")>${entity.moduleName}/</#if>${entityNameLower}")
 public class ${entityName}Controller extends BaseController<${entityName}> {
 
-	@BaseService
+	@BootBaseService
     @Autowired
 	${entityName}Service ${entityNameLower}Service;
 

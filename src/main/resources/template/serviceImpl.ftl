@@ -4,9 +4,9 @@ import org.springframework.stereotype.Service;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.cache.annotation.CacheConfig;
 import org.springframework.beans.factory.annotation.Autowired;
-import net.letcode.core.mvc.bean.Meta;
-import net.letcode.core.mvc.annotation.BaseDao;
-import net.letcode.core.mvc.service.impl.BaseServiceImpl;
+import net.letcode.core.boot.support.bean.Meta;
+import net.letcode.core.boot.support.annotation.BootBaseDao;
+import net.letcode.core.boot.service.impl.BaseServiceImpl;
 import ${packageName}.<#if (entity.moduleName != "")>${entity.moduleName}.</#if>entity.${entityName};
 import ${packageName}.<#if (entity.moduleName != "")>${entity.moduleName}.</#if>dao.${entityName}Dao;
 import ${packageName}.<#if (entity.moduleName != "")>${entity.moduleName}.</#if>service.${entityName}Service;
@@ -21,7 +21,7 @@ import ${packageName}.<#if (entity.moduleName != "")>${entity.moduleName}.</#if>
 @Service("${entityNameLower}Service")
 public class ${entityName}ServiceImpl extends BaseServiceImpl<${entityName}> implements ${entityName}Service {
 	
-	@BaseDao
+	@BootBaseDao
 	@Autowired
 	${entityName}Dao ${entityNameLower}Dao;
 
